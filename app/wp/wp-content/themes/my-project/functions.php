@@ -47,3 +47,6 @@ if (class_exists(Main::class)) {
 if (class_exists(Cli::class)) {
 	(new Cli())->load('boilerplate');
 }
+
+// disable core blocks
+remove_theme_support( 'core-block-patterns' );
