@@ -1,0 +1,16 @@
+{
+	"apiVersion": 2,
+	"name": "my-api-articles/my-articles",
+	"version": "0.1.0",
+	"title": "My articles",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Block to show articles",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "my-articles",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
