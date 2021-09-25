@@ -48,12 +48,12 @@ function my_articles_block_render($attributes) {
 	$return = '<div class="articles-wrapper">';
 
 	for ($i = 0; $i < $attributes["numberOfArticles"]; $i++) {
-		$return .= '<div>' . 
-			'<img src="' . $articles['data'][$i]['imageUrl'] . '">' .
-			'<p>' . $articles['data'][$i]['date'] . '</p>' .
-			'<h3>' . $articles['data'][$i]['title'] . '</h3>' .
-			'<div>' . wp_trim_words($articles['data'][$i]['content'], 18, '...') . '</div>' .
-			'</div>';
+		$return .= '<a href="'. $articles['data'][$i]['url'] .'" class="single-article">' . 
+			'<div class="article-img" style="background-image: url('. $articles['data'][$i]['imageUrl'] .')"></div>' .
+			'<p>'. $articles['data'][$i]['date'] .'</p>' .
+			'<h3>'. $articles['data'][$i]['title'] .'</h3>' .
+			'<div>'. wp_trim_words($articles['data'][$i]['content'], 18, '...') .'</div>' .
+		'</a>';
 	}
 
 	$return .= '</div>';

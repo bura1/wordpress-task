@@ -21,3 +21,17 @@
 		grid-template-columns: 100%;
 	}
 }
+
+.articles-wrapper .single-article {
+	padding-left: 15px;
+	padding-right: 15px;
+	color: inherit;
+    text-decoration: none;
+}
+
+.articles-wrapper .article-img {
+	height: 200px;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
