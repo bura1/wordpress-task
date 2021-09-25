@@ -21,6 +21,21 @@
  * @see https://developer.wordpress.org/block-editor/tutorials/block-tutorial/writing-your-first-block-type/
  */
 function my_api_articles_my_articles_block_init() {
-	register_block_type( __DIR__ );
+	register_block_type( 
+		__DIR__,
+		array(
+			'render_callback' => 'my_articles_block_render',
+			'attributes' => array(
+				'numberOfArticles' => array(
+					'type' => 'number',
+					'default' => 4
+				)
+			)
+		)
+	);
 }
 add_action( 'init', 'my_api_articles_my_articles_block_init' );
+
+function my_articles_block_render($attributes) {
+	return '<p>hello</p>';
+}
