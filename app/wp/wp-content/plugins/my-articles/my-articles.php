@@ -45,7 +45,8 @@ function my_articles_block_render($attributes) {
     $body = wp_remote_retrieve_body($response);
     $articles = json_decode($body, true);
 
-	$return = '<div class="articles-wrapper">';
+
+	$return = '<h1>Latest corns</h1><div class="articles-wrapper">';
 
 	for ($i = 0; $i < $attributes["numberOfArticles"]; $i++) {
 		$return .= '<a href="'. $articles['data'][$i]['url'] .'" class="single-article">' . 
