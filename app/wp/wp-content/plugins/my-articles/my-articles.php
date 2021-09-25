@@ -37,5 +37,26 @@ function my_api_articles_my_articles_block_init() {
 add_action( 'init', 'my_api_articles_my_articles_block_init' );
 
 function my_articles_block_render($attributes) {
-	return '<p>hello</p>';
+	
+	//$response = wp_remote_get('http://localhost:8080/wp-json/wl/v1/articles');
+
+	// testni url, jer lokalno je bio problem sa portom pa php nije mogao dohvatiti podatke
+	$response = wp_remote_get('https://melodiapp.com/wp-json/wl/v1/articles');
+    $body = wp_remote_retrieve_body($response);
+    $articles = json_decode($body, true);
+
+	$return = '<div class="articles-wrapper">';
+
+	for ($i = 0; $i < $attributes["numberOfArticles"]; $i++) {
+		$return .= '<div>' . 
+			'<img src="' . $articles['data'][$i]['imageUrl'] . '">' .
+			'<p>' . $articles['data'][$i]['date'] . '</p>' .
+			'<h3>' . $articles['data'][$i]['title'] . '</h3>' .
+			'<div>' . wp_trim_words($articles['data'][$i]['content'], 18, '...') . '</div>' .
+			'</div>';
+	}
+
+	$return .= '</div>';
+
+	return $return;
 }
