@@ -5,8 +5,19 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.wp-block-my-api-articles-my-articles {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+.articles-wrapper {
+	display: grid;
+  	grid-template-columns: 25% 25% 25% 25%;
+}
+
+@media only screen and (max-width: 767px) {
+	.articles-wrapper {
+		grid-template-columns: 50% 50%;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.articles-wrapper {
+		grid-template-columns: 100%;
+	}
 }
