@@ -23,22 +23,5 @@ import { useBlockProps } from '@wordpress/block-editor';
  * @return {WPElement} Element to render.
  */
 export default function save() {
-	return (
-		<div {...useBlockProps.save()}>
-			<div class="articles-wrapper">
-				<div>
-					
-				</div>
-				<div>
-					
-				</div>
-				<div>
-					
-				</div>
-				<div>
-					
-				</div>
-			</div>
-		</div>
-	);
+	return null;
 }
