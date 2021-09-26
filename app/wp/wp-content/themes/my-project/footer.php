@@ -18,19 +18,18 @@ echo Components::render( // phpcs:ignore WordPress.Security.EscapeOutput.OutputN
 	[
 		'additionalClass' => 'footer',
 		'layoutThreeColumnsLeft' => Components::render(
-			'copyright',
-			[
-				'copyrightBy' => esc_html__('Eightshift', 'my-project'),
-				'copyrightYear' => gmdate('Y'),
-				'copyrightContent' => esc_html__('Made with 🧡  by Team Eightshift', 'my-project'),
-			]
-		),
-		'layoutThreeColumnsRight' => Components::render(
 			'menu',
 			[
 				'variation' => 'horizontal'
 			]
 		),
+		'layoutThreeColumnsRight' => Components::render(
+			'copyright',
+			[
+				'copyrightYear' => gmdate('Y'),
+				'copyrightContent' => esc_html__('All love and happines', 'my-project'),
+			]
+		)
 	]
 );
 
