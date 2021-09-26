@@ -12,6 +12,7 @@
   display: grid;
   -ms-grid-columns: 25% 25% 25% 25%;
   grid-template-columns: 25% 25% 25% 25%;
+  margin-bottom: 100px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -38,6 +39,22 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.date {
+  margin-bottom: 0.3rem;
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #787878;
+}
+
+.title {
+  margin-top: 0;
+}
+
+.articles-block-title {
+  margin-left: 15px;
 }
 
 /*# sourceMappingURL=style-index.css.map*/

@@ -46,14 +46,14 @@ function my_articles_block_render($attributes) {
     $articles = json_decode($body, true);
 
 
-	$return = '<h1>Latest corns</h1><div class="articles-wrapper">';
+	$return = '<h1 class="articles-block-title">Latest corns</h1><div class="articles-wrapper">';
 
 	for ($i = 0; $i < $attributes["numberOfArticles"]; $i++) {
 		$return .= '<a href="'. $articles['data'][$i]['url'] .'" class="single-article">' . 
 			'<div class="article-img" style="background-image: url('. $articles['data'][$i]['imageUrl'] .')"></div>' .
-			'<p>'. $articles['data'][$i]['date'] .'</p>' .
-			'<h3>'. $articles['data'][$i]['title'] .'</h3>' .
-			'<div>'. wp_trim_words($articles['data'][$i]['content'], 18, '...') .'</div>' .
+			'<p class="date">'. $articles['data'][$i]['date'] .'</p>' .
+			'<h3 class="title">'. $articles['data'][$i]['title'] .'</h3>' .
+			'<div class="description">'. wp_trim_words($articles['data'][$i]['content'], 18, '...') .'</div>' .
 		'</a>';
 	}
 
