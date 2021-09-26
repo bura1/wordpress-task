@@ -1,0 +1,16 @@
+{
+  "0.js": "/wp-content/themes/my-project/public/0.js",
+  "application.css": "/wp-content/themes/my-project/public/application.css",
+  "application.js": "/wp-content/themes/my-project/public/application.js",
+  "application.json": "/wp-content/themes/my-project/public/application.asset.json",
+  "applicationAdmin.css": "/wp-content/themes/my-project/public/applicationAdmin.css",
+  "applicationAdmin.js": "/wp-content/themes/my-project/public/applicationAdmin.js",
+  "applicationAdmin.json": "/wp-content/themes/my-project/public/applicationAdmin.asset.json",
+  "applicationBlocks.css": "/wp-content/themes/my-project/public/applicationBlocks.css",
+  "applicationBlocks.js": "/wp-content/themes/my-project/public/applicationBlocks.js",
+  "applicationBlocks.json": "/wp-content/themes/my-project/public/applicationBlocks.asset.json",
+  "applicationBlocksEditor.css": "/wp-content/themes/my-project/public/applicationBlocksEditor.css",
+  "applicationBlocksEditor.js": "/wp-content/themes/my-project/public/applicationBlocksEditor.js",
+  "applicationBlocksEditor.json": "/wp-content/themes/my-project/public/applicationBlocksEditor.asset.json",
+  "logo.svg": "/wp-content/themes/my-project/public/logo.svg"
+}
