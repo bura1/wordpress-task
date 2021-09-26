@@ -14,7 +14,7 @@ function articles() {
 }
 
 add_action('rest_api_init', function() {
-	register_rest_route( 'wl/v1', 'posts', [
+	register_rest_route( 'wl/v1', 'articles', [
 		'methods' => 'GET',
 		'callback' => 'articles'
 	]);

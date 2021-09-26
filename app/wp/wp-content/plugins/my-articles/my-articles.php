@@ -61,3 +61,23 @@ function my_articles_block_render($attributes) {
 
 	return $return;
 }
+
+// Remove core blocks
+function filter_allowed_block_types_when_post_provided( $allowed_block_types, $editor_context ) {
+	if ( ! empty( $editor_context->post ) ) {
+		return array( 
+			'my-api-articles/my-articles', 
+			'eightshift-boilerplate/button',
+			'eightshift-boilerplate/card',
+			'eightshift-boilerplate/column',
+			'eightshift-boilerplate/columns',
+			'eightshift-boilerplate/example',
+			'eightshift-boilerplate/group',
+			'eightshift-boilerplate/heading',
+			'eightshift-boilerplate/image',
+			'eightshift-boilerplate/lists',
+			'eightshift-boilerplate/paragraph' );
+	}
+	return $allowed_block_types;
+}
+add_filter( 'allowed_block_types_all', 'filter_allowed_block_types_when_post_provided', 10, 2 );
