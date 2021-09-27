@@ -505,3 +505,83 @@ body {
   position: relative;
   overflow-x: hidden;
 }
+
+/* Custom css */
+
+body {
+  color: #333333
+}
+
+.header {
+  box-shadow: 0 3px 3px 0px #0000002e;
+  height: 4.5rem;
+}
+
+.menu-horizontal__item--menu-contact a {
+  background-color: #fd85d6;
+  border-radius: 5rem;
+  padding: 0.6rem 1.5rem;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.menu-horizontal__item--menu-contact a:hover {
+  background-color: #0d3636;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.menu-horizontal__link {
+  color: #0d3636;
+  font-weight: 600;
+}
+
+.main-content {
+  max-width: 66rem;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.home .page-title {
+  display: none;
+}
+
+.landing-page-img-left {
+  width: 85%;
+  align-self: start;
+}
+.landing-page-img-right {
+  width: 85%;
+  align-self: end;
+}
+
+@media screen and (max-width: 960px) {
+  .landing-page-img-left {
+    width: 100%;
+    align-self: center;
+  }
+  .landing-page-img-right {
+    width: 100%;
+    align-self: center;
+  }
+}
+
+.custom-heading h2 {
+  color: #fd85d6;
+}
+
+.custom-button .btn {
+  background-color: #fd85d6;
+}
+
+.custom-button .btn:hover {
+  background-color: #0d3636;
+}
+
+.footer {
+  padding: 2.5rem 0;
+}
+
+.footer .menu-horizontal__item--menu-contact {
+  display: none;
+}
