@@ -1,28 +1,22 @@
-/**
- * The following styles get applied inside the editor only.
- *
- * Replace them with your own styles or remove the file completely.
- */
-
-.articles-wrapper {
+.block-articles .articles-wrapper {
 	display: grid;
   	grid-template-columns: 25% 25% 25% 25%;
 }
 
-.articles-wrapper div {
+.block-articles .articles-wrapper div {
 	height: 150px;
 	margin: 15px;
 	border: 1px solid rgb(88, 88, 88);
 }
 
 @media only screen and (max-width: 767px) {
-	.articles-wrapper {
+	.block-articles .articles-wrapper {
 		grid-template-columns: 50% 50%;
 	}
 }
 
 @media only screen and (max-width: 400px) {
-	.articles-wrapper {
+	.block-articles .articles-wrapper {
 		grid-template-columns: 100%;
 	}
 }

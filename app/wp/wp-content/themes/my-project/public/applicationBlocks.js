@@ -11809,7 +11809,7 @@ module.exports = JSON.parse("{\"componentName\":\"drawer\",\"title\":\"Drawer\",
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./example/assets/index.js": "./src/Blocks/custom/example/assets/index.js"
+	"./articles/assets/index.js": "./src/Blocks/custom/articles/assets/index.js"
 };
 
 
@@ -11834,10 +11834,10 @@ webpackContext.id = "./src/Blocks/custom sync recursive assets\\/index\\.js$";
 
 /***/ }),
 
-/***/ "./src/Blocks/custom/example/assets/index.js":
-/*!***************************************************!*\
-  !*** ./src/Blocks/custom/example/assets/index.js ***!
-  \***************************************************/
+/***/ "./src/Blocks/custom/articles/assets/index.js":
+/*!****************************************************!*\
+  !*** ./src/Blocks/custom/articles/assets/index.js ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 

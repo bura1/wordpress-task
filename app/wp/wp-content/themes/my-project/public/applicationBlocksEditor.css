@@ -730,6 +730,27 @@ body .interface-interface-skeleton__content {
   transition-duration: 0.2s;
 }
 
+.block-articles .articles-wrapper {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.block-articles .articles-wrapper div {
+  height: 150px;
+  margin: 15px;
+  border: 1px solid #585858;
+}
+
+@media only screen and (max-width: 767px) {
+  .block-articles .articles-wrapper {
+    grid-template-columns: 50% 50%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .block-articles .articles-wrapper {
+    grid-template-columns: 100%;
+  }
+}
 .block-column {
   display: flex;
   width: 100%;

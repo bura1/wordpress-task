@@ -1,52 +1,45 @@
-/**
- * The following styles get applied both on the front of your site
- * and in the editor.
- *
- * Replace them with your own styles or remove the file completely.
- */
-
-.articles-wrapper {
+.block-articles .articles-wrapper {
 	display: grid;
   	grid-template-columns: 25% 25% 25% 25%;
 	margin-bottom: 100px;
 }
 
 @media only screen and (max-width: 767px) {
-	.articles-wrapper {
+	.block-articles .articles-wrapper {
 		grid-template-columns: 50% 50%;
 	}
 }
 
 @media only screen and (max-width: 400px) {
-	.articles-wrapper {
+	.block-articles .articles-wrapper {
 		grid-template-columns: 100%;
 	}
 }
 
-.articles-wrapper .single-article {
+.block-articles .single-article {
 	padding-left: 15px;
 	padding-right: 15px;
 	color: inherit;
     text-decoration: none;
 }
 
-.articles-wrapper .article-img {
+.block-articles .article-img {
 	height: 200px;
 	background-position: center;
   	background-repeat: no-repeat;
   	background-size: cover;
 }
 
-.date {
+.block-articles .date {
 	margin-bottom: 0.3rem;
     margin-top: 1.5rem;
     font-size: 0.8rem;
     font-style: italic;
     color: #787878;
 }
-.title {
+.block-articles .title {
 	margin-top: 0;
 }
-.articles-block-title {
+.block-articles .articles-block-title {
 	margin-left: 15px;
 }
