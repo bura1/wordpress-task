@@ -5,3 +5,23 @@
 	align-items: var(--block-image-align-horizontal, center);
 	justify-content: var(--block-image-align-vertical, center);
 }
+
+.landing-page-img-left {
+	width: 85%;
+	align-self: start;
+  }
+  .landing-page-img-right {
+	width: 85%;
+	align-self: end;
+  }
+  
+  @media screen and (max-width: 960px) {
+	.landing-page-img-left {
+	  width: 100%;
+	  align-self: center;
+	}
+	.landing-page-img-right {
+	  width: 100%;
+	  align-self: center;
+	}
+  }
