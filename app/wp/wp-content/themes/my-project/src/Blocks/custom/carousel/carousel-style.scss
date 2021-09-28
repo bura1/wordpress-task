@@ -1,0 +1,105 @@
+@import '~swiper/swiper.scss';
+@import '~swiper/components/pagination/pagination.scss';
+
+.block-carousel {
+	width: 100%;
+	position: relative;
+
+	&__item {
+		flex-shrink: 0;
+		transition-property: transform;
+		display: flex;
+	}
+
+	&__item-inner {
+		display: flex;
+		align-items: center;
+	}
+
+	// Pagination.
+	&__pagination {
+		width: auto !important;
+		margin-left: 0.4rem;
+		font-weight: 600;
+	}
+
+	// Navigation buttons.
+	&__button {
+		@extend %button-reset;
+
+		margin: 1.2rem 0.3rem;
+		padding: 0;
+
+		width: 4rem;
+		height: 4rem;
+
+		border: none;
+		border-radius: 10rem;
+
+		backdrop-filter: blur(10px) saturate(150%) brightness(150%);
+		background-repeat: no-repeat;
+    	background-size: contain;
+		background-color: unset;
+
+		cursor: pointer;
+		z-index: 1;
+
+		transform: translateY(0) scale(0.9);
+		transform-origin: center center;
+
+		transition: {
+			property: transform;
+			timing-function: ease-out;
+			duration: 0.3s;
+		}
+
+		&:not(:disabled):hover {
+			transform: translateY(0) scale(1);
+		}
+
+		opacity: 0.4;
+		&:not(:disabled) {
+			opacity: 1;
+		}
+
+		&--previous {
+			left: 1rem;
+		}
+
+		&--next {
+			right: 1rem;
+		}
+	}
+
+	.block-carousel__button--previous {
+		background-image: url("/wp-content/themes/my-project/public/arrow-left.svg") !important;
+	}
+	  
+	.block-carousel__button--next {
+		background-image: url("/wp-content/themes/my-project/public/arrow-right.svg") !important;
+	}
+
+	& > * {
+		max-height: 80vh;
+	}
+
+	// Specific block configs.
+	.block-image,
+	.block-image .image .image__img,
+	.block-image .image {
+		height: 100%;
+		width: 100%;
+	}
+
+	.swiper-slide-next {
+		opacity: 0.3;
+	}
+
+	.carousel-pagination-wrapper {
+		display: inline-flex;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+}
